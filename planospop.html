@@ -192,27 +192,27 @@
               <span>80x</span>
             </label>
             <label class="flex cursor-pointer items-center space-x-1">
-              <input type="radio" name="parcelas-1" value="60x" data-valor="268,90" data-cont="16" class="h-3 w-3 accent-red-600" />
+              <input type="radio" name="parcelas-1" value="60x" data-valor="268,84" data-cont="16" class="h-3 w-3 accent-red-600" />
               <span>60x</span>
             </label>
             <label class="flex cursor-pointer items-center space-x-1">
-              <input type="radio" name="parcelas-1" value="48x" data-valor="322,45" data-cont="20" class="h-3 w-3 accent-red-600" />
+              <input type="radio" name="parcelas-1" value="48x" data-valor="331,14" data-cont="20" class="h-3 w-3 accent-red-600" />
               <span>48x</span>
             </label>
             <label class="flex cursor-pointer items-center space-x-1">
-              <input type="radio" name="parcelas-1" value="36x" data-valor="415,80" data-cont="26" class="h-3 w-3 accent-red-600" />
+              <input type="radio" name="parcelas-1" value="36x" data-valor="436,26" data-cont="26" class="h-3 w-3 accent-red-600" />
               <span>36x</span>
             </label>
             <label class="flex cursor-pointer items-center space-x-1">
-              <input type="radio" name="parcelas-1" value="24x" data-valor="591,25" data-cont="26" class="h-3 w-3 accent-red-600" />
+              <input type="radio" name="parcelas-1" value="24x" data-valor="641,67" data-cont="26" class="h-3 w-3 accent-red-600" />
               <span>24x</span>
             </label>
             <label class="flex cursor-pointer items-center space-x-1">
-              <input type="radio" name="parcelas-1" value="18x" data-valor="771,00" data-cont="26" class="h-3 w-3 accent-red-600" />
+              <input type="radio" name="parcelas-1" value="18x" data-valor="850,60" data-cont="26" class="h-3 w-3 accent-red-600" />
               <span>18x</span>
             </label>
             <label class="flex cursor-pointer items-center space-x-1">
-              <input type="radio" name="parcelas-1" value="12x" data-valor="1.115,40" data-cont="26" class="h-3 w-3 accent-red-600" />
+              <input type="radio" name="parcelas-1" value="12x" data-valor="1.268,49" data-cont="26" class="h-3 w-3 accent-red-600" />
               <span>12x</span>
             </label>
           </div>
@@ -303,6 +303,13 @@
 
     iniciarCartao('plano-honda-1');
     // iniciarCartao('plano-honda-2'); // descomente se criar o slide 2 duplicado com IDs diferentes
+
+    function compartilharWhatsApp() {
+    var url = window.location.href;
+    var mensagem = encodeURIComponent("Acabei de te enviar os planos da disponíveis, dá uma olhadinha com calma e vê qual se encaixa melhor no seu orçamento: " + url);
+    var whatsappUrl = "https://wa.me/?text=" + mensagem;
+    window.open(whatsappUrl, '_blank');
+  }
   </script>
 
 </body>
