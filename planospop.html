@@ -5,7 +5,7 @@
   <title>Planos de Consórcio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon -->
-  <link rel="shortcut icon" href="logot.png" type="image/x-icon">
+  <link rel="shortcut icon" href="moto1.jpg" type="image/x-icon">
   
   <style>
     body {
@@ -128,11 +128,15 @@
 
 
 
+/* Espaçamento entre colunas e linhas */
+  
+
     .parcelas-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
   }
+  
 
   .radio-option {
     display: flex;
@@ -248,6 +252,15 @@
       <div class="swiper-slide">
         <!-- ————————— CARTÃO ————————— -->
         <div id="plano-honda-1" class="relative mx-auto w-80 rounded-xl bg-white p-5 shadow-lg">
+          <!-- Logo (troque o src pelo seu arquivo) -->
+<img src="//ddccctl8fxsqn.cloudfront.net/content/static/images/prod/2024-05/vou-honda-mais_.png.webp"
+               alt="Plano #VoudeHonda+" class="vehicle-plan_icon--image"> <!-- BOTÃO DE VÍDEO -->
+    <a href="https://youtu.be/Q5yWqphpKJ4?si=aP2waBUosgstArd6" target="_blank" class="text-sm text-red-600 hover:underline flex items-center space-x-1">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M10 15l5.19-3L10 9v6z"/><path d="M21 6.5a2.5 2.5 0 0 0-2.5-2.5H5.5A2.5 2.5 0 0 0 3 6.5v11a2.5 2.5 0 0 0 2.5 2.5h13a2.5 2.5 0 0 0 2.5-2.5v-11zM5.5 5h13a1.5 1.5 0 0 1 1.5 1.5v11a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5v-11A1.5 1.5 0 0 1 5.5 5z"/>
+  </svg>
+  <span>Como funciona o Plano</span>
+</a>
           <h2 class="moto-nome mb-4 text-lg font-semibold">#Vou de Honda+ – POP 110i ES + 10</h2>
           <p class="mb-1 text-sm font-medium text-gray-500">Número de parcelas:</p>
           <div class="grid grid-cols-3 gap-2 text-sm">
@@ -357,7 +370,7 @@
         spanValor.textContent = `R$ ${valor}`;
         spanCont.textContent = cont;
 
-        const mensagem = `Olá! Tenho interesse no consórcio da ${nomeMoto}. Plano escolhido: ${parcelas} de R$ ${valor}. Previsão de ${cont} contemplações mensais.`;
+        const mensagem = `Olá! Tenho interesse no consórcio: ${nomeMoto}. Plano escolhido: ${parcelas} de R$ ${valor}. Previsão de ${cont} contemplações mensais.`;
         const urlWhats = `https://wa.me/${numeroZap}?text=${encodeURIComponent(mensagem)}`;
         btnInteresse.href = urlWhats;
       }
