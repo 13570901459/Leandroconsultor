@@ -458,6 +458,14 @@
     /* liga os dois slides */
     iniciarCartao('plano-honda-1', 1);
     iniciarCartao('plano-honda-2', 2);
+
+
+    function compartilharWhatsApp() {
+    var url = window.location.href;
+    var mensagem = encodeURIComponent("Acabei de te enviar os planos da disponíveis, dá uma olhadinha com calma e vê qual se encaixa melhor no seu orçamento: " + url);
+    var whatsappUrl = "https://wa.me/?text=" + mensagem;
+    window.open(whatsappUrl, '_blank');
+  }
   </script>
 </body>
 
